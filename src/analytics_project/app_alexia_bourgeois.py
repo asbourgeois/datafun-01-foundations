@@ -33,7 +33,6 @@ from datafun_toolkit.logger import get_logger, log_header
 
 LOG: logging.Logger = get_logger("P01", level="INFO")
 
-
 # === DECLARE GLOBAL CONSTANTS ===
 
 # All these global variables are CONSTANT, they do NOT change when the program runs.
@@ -68,9 +67,7 @@ STATES_I_HAVE_VISITED: Final[list[str]] = [
     "Hawaii"
 ]
 
-
 # === DECLARE A FUNCTION TO FORMAT THE INFORMATION ===
-
 
 def get_summary() -> str:
     """Get a formatted summary of the information held in the global variables.
@@ -96,9 +93,7 @@ def get_summary() -> str:
     LOG.info("Returning the str to the calling function.")
     return summary
 
-
 # === DECLARE A FUNCTION TO FORMAT DESCRIPTIVE STATISTICS ===
-
 
 def get_statistics() -> str:
     """Get a formatted summary showing descriptive statistics.
