@@ -86,7 +86,7 @@ def get_summary() -> str:
         Employee count: {MY_EMPLOYEE_COUNT}
     All About Me:
         My age: {MY_AGE}
-        My height in feet: {MY_HEIGHT}
+        My height: {MY_HEIGHT} feet
         Is a teacher: {IS_A_TEACHER}
         States I have visted: {STATES_I_HAVE_VISITED}
 
@@ -121,23 +121,25 @@ def get_statistics() -> str:
     # Example : Calculate count of measurements.
     count: int = len(snowfall_inches)
 
-    # TODO: Calculate minimum and maximum snowfall (see other file for examples).
-
+    minimum: float = min(snowfall_inches) 
+    maximum: float = max(snowfall_inches)
+    
     # Use the statistics module to calculate average.
     average: float = statistics.mean(snowfall_inches) if count > 0 else 0.0
 
-    # TODO: Use the statistics module to calculate standard deviation below:
+    std_dev: float = statistics.stdev(snowfall_inches) if count > 0 else 0.0
 
     # Build a formatted multi-line string using f and triple quotes.
     summary: str = f"""
     Descriptive Statistics for Snowfall (inches):
         Total snowfall: {total:.2f} inches
-        TODO: Add your count of measurements below:
-
-        TODO: Add your minimum and maximum snowfall below:
-
+        Count of measurements: {count}
+    #.2f is rounding the float, makes a lot of sense
+        Minimum snowfall: {minimum:.2f} inches
+        Maximum snowfall: {maximum:.2f} inches
         Average snowfall: {average:.2f} inches
         TODO: Add your standard deviation below:
+        Standard Deviation: {std_dev:.2f} inches
 
     """
 
