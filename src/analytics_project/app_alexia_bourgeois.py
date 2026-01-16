@@ -82,6 +82,7 @@ def get_summary() -> str:
         Company name: {MY_ANALYTICS_COMPANY}
         Employee count: {MY_EMPLOYEE_COUNT}
     All About Me:
+        My favorite color: {MY_FAVORITE_COLOR}
         My age: {MY_AGE}
         My height: {MY_HEIGHT} feet
         Is a teacher: {IS_A_TEACHER}
