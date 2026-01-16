@@ -18,9 +18,6 @@ OBS:
   This is your file to practice and customize.
   Find the TODO comments, and as you complete each task, remove the TODO note.
 
-
-TODO: Update the associated `uv run python` command in the README.md file.
-
 """
 
 
@@ -49,22 +46,27 @@ LOG: logging.Logger = get_logger("P01", level="INFO")
 MY_ANALYTICS_COMPANY: Final[str] = "DataFun Analytics"
 MY_EMPLOYEE_COUNT: Final[int] = 150
 
-# See the other file for examples.
-# TODO: Declare and initialize a string (str) variable of your choice below:
+MY_FAVORITE_COLOR: Final[str] = "Blue"
 
+MY_AGE: Final[int] = 25
 
-# TODO: Declare and initialize an integer (int) variable of your choice below:
+MY_HEIGHT: Final[float] = 5.167
 
+IS_A_TEACHER: Final[bool] = True
 
-# TODO: Declare and initialize a float (float) variable of your choice below:
-
-
-# TODO: Declare and initialize a boolean (bool) variable of your choice (True or False) below:
-
-
-# TODO: Declare and initialize a list of strings (list[str]) variable of your choice below:
-# REQ: Strings must be in quotes and items are separated by commas,
-# REQ: The list is wrapped in square brackets. (See the other file for examples.)
+STATES_I_HAVE_VISITED: Final[list[str]] = [
+    "California",
+    "Mississippi",
+    "Oklahoma",
+    "Arizona",
+    "New York",
+    "Louisianna",
+    "New Mexico",
+    "Texas",
+    "Alabama",
+    "Nevada",
+    "Hawaii"
+]
 
 
 # === DECLARE A FUNCTION TO FORMAT THE INFORMATION ===
@@ -85,7 +87,9 @@ def get_summary() -> str:
     Custom Information:
         Company name: {MY_ANALYTICS_COMPANY}
         Employee count: {MY_EMPLOYEE_COUNT}
-        TODO: Add your other global variables below:
+        My age: {MY_AGE}
+        My height in feet: {MY_HEIGHT}
+        
 
 
 
