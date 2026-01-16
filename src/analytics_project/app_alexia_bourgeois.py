@@ -79,21 +79,16 @@ def get_summary() -> str:
 
     Returns: - a formatted multi-line string (starts with f and wrapped in triple quotes).
     """
-    # TODO: Create and return a multi-line f-string (triple-quoted) that includes
-    # all of the global variables you declared above, each on its own line,
-    # labeled clearly with descriptive text.
-    # See the other file for an example. Remember to start the string with an f!
+
     summary: str = f"""
     Custom Information:
         Company name: {MY_ANALYTICS_COMPANY}
         Employee count: {MY_EMPLOYEE_COUNT}
+    All About Me:
         My age: {MY_AGE}
         My height in feet: {MY_HEIGHT}
-        
-
-
-
-
+        Is a teacher: {IS_A_TEACHER}
+        States I have visted: {STATES_I_HAVE_VISITED}
 
     """
 
@@ -116,7 +111,7 @@ def get_statistics() -> str:
     # REQ: Vary ONE of the sample data values.
     # See how the statistics change when you do.
     # TODO: Change one of the values in the list below.
-    snowfall_inches: list[float] = [2.5, 3.5, 4.5, 5.5, 6.5]
+    snowfall_inches: list[float] = [2.5, 3.2, 4.5, 5.5, 6.5]
 
     # Calculate descriptive statistics below - see other file for examples.
 
