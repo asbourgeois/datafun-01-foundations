@@ -130,16 +130,17 @@ def get_statistics() -> str:
     std_dev: float = statistics.stdev(snowfall_inches) if count > 0 else 0.0
 
     # Build a formatted multi-line string using f and triple quotes.
+    #.2f is rounding the float, makes a lot of sense
+
     summary: str = f"""
     Descriptive Statistics for Snowfall (inches):
         Total snowfall: {total:.2f} inches
         Count of measurements: {count}
-    #.2f is rounding the float, makes a lot of sense
         Minimum snowfall: {minimum:.2f} inches
         Maximum snowfall: {maximum:.2f} inches
         Average snowfall: {average:.2f} inches
         TODO: Add your standard deviation below:
-        Standard Deviation: {std_dev:.2f} inches
+        Standard Deviation: {std_dev:.3f} inches
 
     """
 
