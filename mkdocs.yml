@@ -1,8 +1,6 @@
 # mkdocs.yml
 # Configuration file for MkDocs (Automated project documentation generator)
 
-# TODO: Update site_description
-
 site_name: Professional Analytics Project
 site_url: https://asbourgeois.github.io/datafun-01-foundations/
 repo_url: https://github.com/asbourgeois/datafun-01-foundations
