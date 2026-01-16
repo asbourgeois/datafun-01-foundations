@@ -10,7 +10,7 @@ site_name: Professional Analytics Project
 site_url: https://asbourgeois.github.io/datafun-01-foundations/
 repo_url: https://github.com/asbourgeois/datafun-01-foundations
 site_description: Professional Python project demonstrating industry best practices
-site_author: Denise Case
+site_author: Alexia Bourgeois
 docs_dir: docs
 site_dir: site
 
